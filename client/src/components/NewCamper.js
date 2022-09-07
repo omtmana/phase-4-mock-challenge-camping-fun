@@ -25,9 +25,10 @@ function NewCamper({ onAddCamper }) {
           setErrors([]);
           onAddCamper(camper);
         });
-      } else {
-        r.json().then((err) => setErrors(err.errors));
-      }
+      } 
+      // else {
+      //   r.json().then((err) => setErrors(err.errors));
+      // }
     });
   }
 
